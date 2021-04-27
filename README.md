@@ -25,7 +25,7 @@ Sistema Operacional:
 
 ## Desenvolvimento
 
-Primeira Etapa:
+### Primeira Etapa:
 - Criar o projeto no Github
 - Clonar o repositório
 - Dentro do projeto, criar o **package.json**
@@ -75,9 +75,11 @@ yarn dev
 ```
 - Obs: Em caso de erro, por já haver uma instância de **Node** rodando, digitar o comando **pkill node** e repetir o comando **yarn dev**
 
+#
 ---
+#
 
-Segunda Etapa:
+### Segunda Etapa:
 - Instalar o módulo avançado de gerenciamento de relações de objeto
 ```sh
 yarn add typeorm --save
@@ -180,5 +182,4 @@ app.use(routes);
 ``` 
 
 - Criar na raiz da pasta **/src** uma nova pasta chamada **controllers**, responsável pela classe de comunicação entre a rota e o repositório
-- Criar na raiz da pasta **controllers** o arquivo **ClientesController.ts**
-- Alterar o arquivo **routes.ts** para utilizar o controller criado
+- Criar na raiz da pasta **controllers** e o arquivo **ClientesController.ts**
