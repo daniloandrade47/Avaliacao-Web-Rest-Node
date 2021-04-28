@@ -183,4 +183,16 @@ app.use(routes);
 ``` 
 
 - Criar na raiz da pasta **/src** uma nova pasta chamada **controllers**, responsável pela classe de comunicação entre a rota e o repositório
-- Criar na raiz da pasta **controllers** e o arquivo **ClientesController.ts**
+- Criar na raiz da pasta **controllers** o arquivo **ClientesController.ts**
+
+#
+---
+#
+
+### Terceira Etapa:
+
+- Criar na raiz da pasta **src** uma nova pasta chamada **services**, que será a responsável pelas regras de negócio
+- Criar em **src/services** o arquivo **ClientService.ts**, neste momento retiro as regras de negócio que estavam no Controller e coloco aqui
+- Implementar uma validação de usuário **ClientService.ts**
+- Alterar o Controller colocando um **try/catch**, pois ao implementar a validação de usuário no Service, com **throw new Error**, automáticamente o erro passa a camada superior
+
