@@ -11,7 +11,8 @@ manuteção de piscinas. Todos os produtos cadastrados são reais, mas aqui, ape
 representam exemplos para viabilização deste projeto.
 
 - ✨Schema de tabelas do Banco de  Dados✨
-[!Tabelas|[MER]](https://whimsical.com/9PxX1XZEWBzPGykx2KW1Sj)
+
+[![Tabelas | Aperte Ctrl + Click]](https://whimsical.com/9PxX1XZEWBzPGykx2KW1Sj)
 
 ## Tecnologias Usadas
 Sistema Operacional:
