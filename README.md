@@ -24,8 +24,12 @@ Sistema Operacional:
 - [Insomnia] - API Client para testar rotas
 - [Beekeeper Studio] - Editor SQL de código aberto e um aplicativo de gerenciamento de banco de dados
 
-## Desenvolvimento
+#### Adendo
+- Para verificar no Insominia e no Beekeeper, rodar: **yarn dev**
+#
 
+## Desenvolvimento
+#
 ### Primeira Etapa:
 - Criar o projeto no Github
 - Clonar o repositório
@@ -137,6 +141,8 @@ import "./database";
 "cli": {
     "migrationsDir": "./src/database/migrations"
 ```
+#
+
 - Criar a migration *Clientes*
 ```sh
 yarn typeorm migration:create -n CreateClientes
@@ -195,4 +201,53 @@ app.use(routes);
 - Criar em **src/services** o arquivo **ClientService.ts**, neste momento retiro as regras de negócio que estavam no Controller e coloco aqui
 - Implementar uma validação de usuário **ClientService.ts**
 - Alterar o Controller colocando um **try/catch**, pois ao implementar a validação de usuário no Service, com **throw new Error**, automáticamente o erro passa a camada superior
+- No terminal rodar **yarn dev** e testar no Insominia
+
+#
+---
+#
+
+### Quarta Etapa:
+#
+- Nesta etapa vou repetir alguns passos dados anteriormente, afim de criar as outras entidades: **Produtos, Pedidos, PedidoProdutos**.
+
+Exemplo: **Tabela Produtos**
+#
+
+- Criar a migration da tabela **Produtos**
+```sh
+yarn typeorm migration:create -n CreateProdutos
+``` 
+
+- Editar o novo arquivo de migration criado
+
+- Executar a criação da tabela
+```sh
+yarn typeorm migration:run
+``` 
+
+- Conferir no **Beekeeper** se a tabela foi criada e está tudo ok.
+
+- Criar dentro da pasta **src/Entities/** o arquivo **Products.ts**, escreve-lo conforme atributos da tabela.
+
+- Criar dentro da pasta **src/Repositories/** o arquivo **ProductRepository.ts**, escreve-lo conforme atributos da tabela.
+
+- Criar dentro da pasta **src/Controllers/** o arquivo **ProductController.ts**, escreve-lo conforme atributos da tabela.
+
+- Criar dentro da pasta **src/Service/** o arquivo **ProductService.ts**, escreve-lo conforme atributos da tabela.
+
+- Em routes, acrescentar a chamada ao controller do Product e também a rota.
+
+```sh
+const productController = new ProductController();
+routes.post("/produtos", productController.create);
+```
+- No terminal rodar **yarn dev** e testar no Insominia
+
+- OBS.: REPETIR ESTA ETAPA PARA AS DEMAIS TABELAS
+
+#### Adendo
+- Adicionei nos arquivos, fora da pasta projeto, os produtos cadastrados para testar a aplicação. O nome do arquivo é **products_query_results-2021-04-28_92934**. Para usar, retire o **Id**, bem como o **updated_at **e o **created_at**
+
+
 
