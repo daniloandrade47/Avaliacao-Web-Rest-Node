@@ -1,11 +1,11 @@
 import {MigrationInterface, QueryRunner, Table} from "typeorm";
 
-export class CreatePedidos1621345828491 implements MigrationInterface {
+export class CreatePedidoProdutos1621348934819 implements MigrationInterface {
 
     public async up(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.createTable(
             new Table({
-                name: "pedidos",
+                name: "pedidoProdutos",
                 columns: [
                     {
                         name: "id",
@@ -13,39 +13,41 @@ export class CreatePedidos1621345828491 implements MigrationInterface {
                         isPrimary: true
                     },
                     {
-                        name: "idClient",
-                        type: "uuid",
+                        name: "idOrder",
+                        type: "uuid"
                     },
                     {
-                        name: "numOrder",
+                        name: "idProduct",
+                        type: "uuid"
+                    },
+                    {
+                        name: "quant",
                         type: "decimal",
                         precision: 6,
                         default: 0
                     },
                     {
-                        name: "valueOrder",
+                        name: "value",
                         type: "decimal",
                         precision: 6,
                         default: 0
-                    },
-                    {
-                        name: "updated_at",
-                        type: "timestamp",
-                        default: "now()",
-                    },
-                    {
-                        name: "created_at",
-                        type: "timestamp",
-                        default: "now()",
-                    }
+                    }                    
                 ],
 
-                foreignKeys : [
+                foreignKeys: [
                     {
-                        name: "FKCliente",
-                        referencedTableName: "clientes",
+                        name: "FKPedido",
+                        referencedTableName: "order",
                         referencedColumnNames: ["id"],
-                        columnNames: ["idClient"],
+                        columnNames: ["idOrder"],
+                        onDelete: "SET NULL",
+                        onUpdate: "SET NULL",
+                    },
+                    {
+                        name: "FKProduto",
+                        referencedTableName: "produtos",
+                        referencedColumnNames: ["id"],
+                        columnNames: ["idProduct"],
                         onDelete: "SET NULL",
                         onUpdate: "SET NULL",
                     }
@@ -55,7 +57,6 @@ export class CreatePedidos1621345828491 implements MigrationInterface {
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.dropTable("pedidos")
+        await queryRunner.dropTable("pedidoProdutos");
     }
-
 }

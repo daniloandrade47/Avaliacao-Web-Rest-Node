@@ -1,7 +1,7 @@
 import { Column, CreateDateColumn, Entity, JoinColumn, ManyToOne, PrimaryColumn, UpdateDateColumn } from "typeorm";
 import { Client } from "./Client";
 
-@Entity("order")
+@Entity("pedidos")
 class Order {
 
   @PrimaryColumn()
