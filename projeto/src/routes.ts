@@ -8,6 +8,8 @@ const clientController = new ClientController();
 const productController = new ProductController();
 
 routes.post("/clientes", clientController.create);
+routes.get("/clientes", clientController.findAll);
+
 routes.post("/produtos", productController.create);
   
 export { routes };

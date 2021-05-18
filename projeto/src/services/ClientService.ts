@@ -37,6 +37,13 @@ class ClientService {
 
     return clientX;
   }
+
+  async findAll(){
+    const list = await this.clientRepository.find();
+
+    return list;
+  }
 }
+
 
 export { ClientService };
