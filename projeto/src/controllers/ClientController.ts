@@ -3,12 +3,12 @@ import { ClientService } from "../services/ClientService";
 
 class ClientController {
   async create(request: Request, response: Response){
-    const { fullname, email, cel } = request.body;
+    const { id, fullname, email, cel } = request.body;
 
     const clientService = new ClientService();
 
     try{
-      const clientX = await clientService.create({ fullname, email, cel });
+      const clientX = await clientService.create({id, fullname, email, cel });
     
       if (clientX){
         return response.status(201).json(clientX);
@@ -25,6 +25,7 @@ class ClientController {
     }
   }
   
+
   async findAll(request: Request, response: Response){
     
     const clientService = new ClientService();
@@ -33,6 +34,76 @@ class ClientController {
 
     return response.json(clientes);
   }
+
+
+  async findByID(request: Request, response: Response){
+    const { id } = request.params;
+    const clientService = new ClientService();
+
+    try{
+      const clientX = await clientService.findByID(String(id));
+
+      return response.json(clientX);
+    }catch (error) {
+      return response.status(404).json({
+        message:error.message,
+      });
+    }
+  }
+
+
+
+
+  async findByEmail(request: Request, response: Response){
+
+    const { email } = request.params;
+    const clientService = new ClientService();
+
+    try{
+      const clientX = await clientService.findByEmail(email);
+
+      return response.json(clientX);
+    } catch (error) {
+
+      return response.status(400).json({
+        message:error.message,
+      });
+    }
+  }
+
+
+
+
+  async update(request:Request, response: Response){
+    const { id, fullname, email, cel } = request.body;
+    const clientService = new ClientService();
+
+    try{
+      const clientX = await clientService.update({
+        id,
+        fullname,
+        email,
+        cel
+      });
+
+      if (clientX) {
+        return response.status(200).json(clientX);
+      } else {
+        return response.status(404).json({
+          message: "Error: Something went wrong"
+        });
+      }
+
+    } catch (error) {
+      return response.status(404).json({
+        message: error.message,
+      });
+    }
+  }
+
+
+
+
 }
 
 export { ClientController };
