@@ -14,6 +14,9 @@ class Product {
   category: string;
 
   @Column()
+  quant: number;
+
+  @Column()
   value: number;
 
   @CreateDateColumn()

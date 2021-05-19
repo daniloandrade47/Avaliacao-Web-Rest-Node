@@ -21,6 +21,11 @@ export class CreateProdutos1619646427015 implements MigrationInterface {
                         type: "varchar",
                     },
                     {
+                        name: "quant",
+                        type: "number",
+                        default: 0
+                    },
+                    {
                         name: "value",
                         type: "number",
                     },

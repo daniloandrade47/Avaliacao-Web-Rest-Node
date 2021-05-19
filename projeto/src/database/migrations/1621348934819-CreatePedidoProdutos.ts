@@ -22,8 +22,7 @@ export class CreatePedidoProdutos1621348934819 implements MigrationInterface {
                     },
                     {
                         name: "quant",
-                        type: "decimal",
-                        precision: 6,
+                        type: "number",
                         default: 0
                     },
                     {

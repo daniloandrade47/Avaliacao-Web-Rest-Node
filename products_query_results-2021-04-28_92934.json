@@ -1,290 +1,218 @@
 [
 	{
-		"id": "a1180739-4cbc-4101-b083-be507398449e",
 		"nameProd": "Fita Teste 5 em 1 50 unidades Axton",
 		"category": "Análise",
-		"value": 59.9,
-		"updated_at": "2021-04-29 00:16:13",
-		"created_at": "2021-04-29 00:16:13"
+		"quant": 5,
+		"value": 59.9
 	},
 	{
-		"id": "988d30f0-3ad2-4263-bc46-ddfa3639a3e7",
 		"nameProd": "Estojo Teste para Piscina pH e Cloro Fluidra ",
 		"category": "Análise",
-		"value": 56.9,
-		"updated_at": "2021-04-29 00:16:53",
-		"created_at": "2021-04-29 00:16:53"
+		"quant": 15,
+		"value": 56.9
 	},
 	{
-		"id": "be023dde-4384-47e9-9f1a-77fcab067253",
 		"nameProd": "Kit Para Tratamento Elevador de pH Axton",
 		"category": "Análise",
-		"value": 291.6,
-		"updated_at": "2021-04-29 00:17:14",
-		"created_at": "2021-04-29 00:17:14"
+		"quant": 10,
+		"value": 291.6
 	},
 	{
-		"id": "2e297b22-80f1-4e71-a9dc-233e9dfae3ed",
 		"nameProd": "Kit Para Tratamento de Agua Verde Axton",
 		"category": "Análise",
-		"value": 282.19,
-		"updated_at": "2021-04-29 00:17:22",
-		"created_at": "2021-04-29 00:17:22"
+		"quant": 10,
+		"value": 282.19
 	},
 	{
-		"id": "9867e0a2-bbe2-4f19-b2b9-2b547f7f04e1",
 		"nameProd": "Kit Para Tratamento de Água Turva Axton",
 		"category": "Análise",
-		"value": 323.6,
-		"updated_at": "2021-04-29 00:17:33",
-		"created_at": "2021-04-29 00:17:33"
+		"quant": 10,
+		"value": 323.6
 	},
 	{
-		"id": "eaa75943-f7d4-4f06-9672-d84ea28f4d93",
 		"nameProd": "Kit Para Tratamento Elevador de Alcalinidade Axton",
 		"category": "Análise",
-		"value": 303.6,
-		"updated_at": "2021-04-29 00:17:55",
-		"created_at": "2021-04-29 00:17:55"
+		"quant": 10,
+		"value": 303.6
 	},
 	{
-		"id": "a12e91a2-c6ac-47e3-9fb6-96a1e787e0ba",
 		"nameProd": "Fita Teste 25 unidades HTM",
 		"category": "Análise",
-		"value": 47.9,
-		"updated_at": "2021-04-29 00:18:02",
-		"created_at": "2021-04-29 00:18:02"
+		"quant": 10,
+		"value": 47.9
 	},
 	{
-		"id": "283d6ff9-0734-422e-ba61-827ae08652cd",
 		"nameProd": "Kit para Tratamento de Oleosidade Axton",
 		"category": "Análise",
-		"value": 297.6,
-		"updated_at": "2021-04-29 00:18:10",
-		"created_at": "2021-04-29 00:18:10"
+		"quant": 10,
+		"value": 297.6
 	},
-	{
-		"id": "08bead85-ce52-4a22-aa19-53fd83a68e5e",
+	{		
 		"nameProd": "Kit para Tratamento Redutor de pH e Alcalinidade Axton",
 		"category": "Análise",
-		"value": 294.6,
-		"updated_at": "2021-04-29 00:18:19",
-		"created_at": "2021-04-29 00:18:19"
+		"quant": 10,
+		"value": 294.6
 	},
 	{
-		"id": "23207777-d03b-48c2-a5ac-63bd74d2a792",
 		"nameProd": "Elevador de pH Granulado 2kg Axton",
 		"category": "Equilibrio",
-		"value": 26.9,
-		"updated_at": "2021-04-29 00:18:26",
-		"created_at": "2021-04-29 00:18:26"
+		"quant": 10,
+		"value": 26.9
 	},
 	{
-		"id": "e3921ca4-4099-482a-8056-31e76d2f80de",
 		"nameProd": "Redutor de pH e Alcalinidade 1L Axton",
 		"category": "Equilibrio",
-		"value": 29.9,
-		"updated_at": "2021-04-29 00:18:32",
-		"created_at": "2021-04-29 00:18:32"
+		"quant": 10,
+		"value": 29.9
 	},
 	{
-		"id": "70395a00-8c40-4ad2-8f75-eafc876e3abc",
-		"nameProd": "Elevador de pH 1,5Kg HTM",
+		"nameProd": "Elevador de pH 1,5Kg TM",
 		"category": "Equilibrio",
-		"value": 35.9,
-		"updated_at": "2021-04-29 00:18:39",
-		"created_at": "2021-04-29 00:18:39"
+		"quant": 10,
+		"value": 35.9
 	},
 	{
-		"id": "6aa1f3ef-1f5d-493b-8c9f-56b843e8b437",
 		"nameProd": "Redutor de pH e Alcalinidade Extra Forte 1L HTM",
 		"category": "Equilibrio",
-		"value": 32.9,
-		"updated_at": "2021-04-29 00:18:44",
-		"created_at": "2021-04-29 00:18:44"
+		"quant": 10,
+		"value": 32.9
 	},
 	{
-		"id": "525af75d-cc51-4c50-90b6-57c58a31fa0e",
 		"nameProd": "Sulfato de Aluminio 2Kg Genco",
 		"category": "Equilibrio",
-		"value": 19.99,
-		"updated_at": "2021-04-29 00:18:50",
-		"created_at": "2021-04-29 00:18:50"
+		"quant": 10,
+		"value": 19.99
 	},
 	{
-		"id": "83b958e3-fae2-470c-9e22-99ed078efd4e",
 		"nameProd": "Kit para Tratamento Elevador de pH Axton",
 		"category": "Equilibrio",
-		"value": 291.6,
-		"updated_at": "2021-04-29 00:18:56",
-		"created_at": "2021-04-29 00:18:56"
+		"quant": 10,
+		"value": 291.6
 	},
 	{
-		"id": "c406f3af-94bf-4517-9dd8-d7e32981ade9",
 		"nameProd": "Cloro 5 em 1 Multiação Tablete 200g",
 		"category": "Purificação",
-		"value": 7.99,
-		"updated_at": "2021-04-29 00:19:04",
-		"created_at": "2021-04-29 00:19:04"
+		"quant": 10,
+		"value": 7.99
 	},
 	{
-		"id": "8b648fb7-662d-4214-9e24-ffda1e8cc13d",
 		"nameProd": "Cloro 5 em 1 Multiação 1Kg Axton",
 		"category": "Purificação",
-		"value": 29.9,
-		"updated_at": "2021-04-29 00:19:10",
-		"created_at": "2021-04-29 00:19:10"
+		"quant": 10,
+		"value": 29.9
 	},
 	{
-		"id": "d97e1f90-7c0f-4f51-a823-51704791f0c5",
 		"nameProd": "Cloro 5 em 1 Multiação 5Kg Axton",
 		"category": "Purificação",
-		"value": 99.9,
-		"updated_at": "2021-04-29 00:19:19",
-		"created_at": "2021-04-29 00:19:19"
+		"quant": 10,
+		"value": 99.9
 	},
 	{
-		"id": "d179edab-081e-4cd7-b2ac-a2a4d764cc07",
 		"nameProd": "Cloro 5 em 1 Multiação 10Kg Axton",
 		"category": "Purificação",
-		"value": 179.9,
-		"updated_at": "2021-04-29 00:19:25",
-		"created_at": "2021-04-29 00:19:25"
+		"quant": 10,
+		"value": 179.9
 	},
 	{
-		"id": "891746e8-e8aa-420e-bd5b-845115e88859",
 		"nameProd": "Cloro Flutuador 830g HTM",
 		"category": "Purificação",
-		"value": 52.9,
-		"updated_at": "2021-04-29 00:19:30",
-		"created_at": "2021-04-29 00:19:30"
+		"quant": 10,
+		"value": 52.9
 	},
 	{
-		"id": "d86d3b9d-ff44-4523-9b5b-01780b594d6c",
 		"nameProd": "Pace Tripla Ação 200g",
 		"category": "Purificação",
-		"value": 9.39,
-		"updated_at": "2021-04-29 00:19:36",
-		"created_at": "2021-04-29 00:19:36"
+		"quant": 10,
+		"value": 9.39
 	},
 	{
-		"id": "d1a770ca-0871-413f-a996-879caf6ac8ac",
 		"nameProd": "Cloro Aditivado Mineral Briliance 5,5 Kg HTM",
 		"category": "Purificação",
-		"value": 122.9,
-		"updated_at": "2021-04-29 00:19:43",
-		"created_at": "2021-04-29 00:19:43"
+		"quant": 10,
+		"value": 122.9
 	},
 	{
-		"id": "5f96061b-03f5-4bf4-8c93-924a0126c8d6",
 		"nameProd": "Cloro Granulado Multi Ação 3 em 10Kg Genco",
 		"category": "Purificação",
-		"value": 174.9,
-		"updated_at": "2021-04-29 00:19:49",
-		"created_at": "2021-04-29 00:19:49"
+		"quant": 10,
+		"value": 174.9
 	},
 	{
-		"id": "6d7fa9ee-bca4-46d9-aa84-a3bf06ac20ab",
 		"nameProd": "Clorador Dosador de Pastilhas Automático",
 		"category": "Purificação",
-		"value": 250,
-		"updated_at": "2021-04-29 00:19:54",
-		"created_at": "2021-04-29 00:19:54"
+		"quant": 10,
+		"value": 250
 	},
 	{
-		"id": "917ed31d-71ba-4529-8d99-d08da43f3dda",
 		"nameProd": "Limpa Bordas 1L Axton",
 		"category": "Prevenção",
-		"value": 24.9,
-		"updated_at": "2021-04-29 00:21:16",
-		"created_at": "2021-04-29 00:21:16"
+		"quant": 10,
+		"value": 24.9
 	},
 	{
-		"id": "7f99a52f-cb10-492b-8624-c03c80a433ec",
 		"nameProd": "Brilho Mineral Natural 1Kg Axton",
 		"category": "Prevenção",
-		"value": 22.9,
-		"updated_at": "2021-04-29 00:21:46",
-		"created_at": "2021-04-29 00:21:46"
+		"quant": 10,
+		"value": 22.9
 	},
 	{
-		"id": "4aa7c512-8908-4aff-8fe1-6f2a561d6544",
 		"nameProd": "Algicida Choque 3 em 1L Axton",
 		"category": "Prevenção",
-		"value": 17.49,
-		"updated_at": "2021-04-29 00:22:12",
-		"created_at": "2021-04-29 00:22:12"
+		"quant": 10,
+		"value": 17.49
 	},
 	{
-		"id": "a321f0dd-fc11-4194-b980-03b6a01e9269",
 		"nameProd": "Clarificante Decantador 1L Axton",
 		"category": "Prevenção",
-		"value": 25.9,
-		"updated_at": "2021-04-29 00:22:32",
-		"created_at": "2021-04-29 00:22:32"
+		"quant": 10,
+		"value": 25.9
 	},
 	{
-		"id": "e1912616-bf7a-4b34-a7e7-d4961cd960b8",
 		"nameProd": "Algicida Choque 3 em 1 5L Axton",
 		"category": "Prevenção",
-		"value": 109.9,
-		"updated_at": "2021-04-29 00:23:16",
-		"created_at": "2021-04-29 00:23:16"
+		"quant": 10,
+		"value": 109.9
 	},
 	{
-		"id": "14146a38-e3ae-4347-8a2d-ec2dcef8e520",
 		"nameProd": "Sal para Piscina 25 kg Veico",
 		"category": "Prevenção",
-		"value": 72.9,
-		"updated_at": "2021-04-29 00:23:45",
-		"created_at": "2021-04-29 00:23:45"
+		"quant": 10,
+		"value": 72.9
 	},
 	{
-		"id": "51ea7746-410e-4494-ab99-c508c743e46c",
 		"nameProd": "Solução Água de Poço 1L HTM",
 		"category": "Prevenção",
-		"value": 45.9,
-		"updated_at": "2021-04-29 00:24:13",
-		"created_at": "2021-04-29 00:24:13"
+		"quant": 10,
+		"value": 45.9
 	},
 	{
-		"id": "21f4991b-bd44-4dfc-a9bb-2563dc70f0c1",
 		"nameProd": "Clarificante Maxfloc 1L HTM",
 		"category": "Prevenção",
-		"value": 23.9,
-		"updated_at": "2021-04-29 00:24:36",
-		"created_at": "2021-04-29 00:24:36"
+		"quant": 10,
+		"value": 23.9
 	},
 	{
-		"id": "c803e289-4008-494c-b01f-eba62a2a7363",
 		"nameProd": "Previne Água Verde 5L HTM",
 		"category": "Prevenção",
-		"value": 129.9,
-		"updated_at": "2021-04-29 00:25:09",
-		"created_at": "2021-04-29 00:25:09"
+		"quant": 10,
+		"value": 129.9
 	},
 	{
-		"id": "ee86d7fb-0010-4cb2-9085-54e93b62381f",
 		"nameProd": "Mini Pastilha de Cloro Biocloror para Piscina Pote com 50 unid de 2 gramas",
 		"category": "Prevenção",
-		"value": 35.19,
-		"updated_at": "2021-04-29 00:26:02",
-		"created_at": "2021-04-29 00:26:02"
+		"quant": 10,
+		"value": 35.19
 	},
 	{
-		"id": "becd1d29-401f-42ef-83db-93c3b6580ba3",
 		"nameProd": "Inibidor de Manchas e Incrustrações Genquest 1L Genco",
 		"category": "Prevenção",
-		"value": 32.9,
-		"updated_at": "2021-04-29 00:26:44",
-		"created_at": "2021-04-29 00:26:44"
+		"quant": 10,
+		"value": 32.9
 	},
 	{
-		"id": "65dd478d-1d20-41d8-a07c-cadcae3c4853",
 		"nameProd": "Cloro Orgânico Estabilizado Premium 3 kg Neoclor",
 		"category": "Prevenção",
-		"value": 99,
-		"updated_at": "2021-04-29 00:27:20",
-		"created_at": "2021-04-29 00:27:20"
+		"quant": 10,
+		"value": 99
 	}
 ]

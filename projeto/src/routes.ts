@@ -1,11 +1,15 @@
 import { Router } from "express";
 import { ClientController } from "./controllers/ClientController";
+import { OrderController } from "./controllers/OrderController";
+import { OrderProductController } from "./controllers/OrderProductController";
 import { ProductController } from "./controllers/ProductController";
 
 const routes = Router();
 
 const clientController = new ClientController();
 const productController = new ProductController();
+const orderController = new OrderController();
+const orderProductController = new OrderProductController
 
 // Routes for Entity Client
 routes.post("/clientes", clientController.create);
@@ -20,6 +24,12 @@ routes.post("/produtos", productController.create);
 routes.get("/produtos", productController.findAll);
 routes.get("/produtos/id/:id", productController.findByID);
 routes.put("/produtos", productController.update);
+
+
+// Routes Pedidos
+routes.post("/pedidos", orderController.create);
+routes.get("/pedidos", orderController.findAll);
+routes.get("/pedidos/produtos/:idOrder", orderProductController.findOrderProduct);
 
   
 export { routes };

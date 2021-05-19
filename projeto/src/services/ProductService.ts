@@ -7,6 +7,7 @@ interface IProductCreate {
   id: string;
   nameProd: string;
   category: string;
+  quant: number;
   value: number;
 }
 
@@ -17,13 +18,14 @@ class ProductService {
     this.productRepository = getCustomRepository(ProductRepository);
   } 
 
-  async create({ id, nameProd, category, value } : IProductCreate){
+  async create({ id, nameProd, category, quant, value } : IProductCreate){
     
     // Select * from Clientes where fullname = "fullname" limit 1;
     const userAlreadyExists = await this.productRepository.findOne({
       id,
       nameProd,
       category,
+      quant,
       value
     });
 
@@ -35,6 +37,7 @@ class ProductService {
       id,
       nameProd,
       category,
+      quant,
       value
     });
 
@@ -69,7 +72,7 @@ class ProductService {
 
 
 
-  async update({ id, nameProd, category, value}: IProductCreate){
+  async update({ id, nameProd, category, quant, value}: IProductCreate){
     const productX = await this.productRepository.findOne({
       id
     });
@@ -80,6 +83,7 @@ class ProductService {
 
     productX.nameProd = nameProd;
     productX.category = category;
+    productX.quant = quant;
     productX.value = value;
 
     await this.productRepository.save(productX);
@@ -90,9 +94,6 @@ class ProductService {
 
     return productY;
   }
-
-
-
 
 }
 

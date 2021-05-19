@@ -4,12 +4,12 @@ import { ProductService } from "../services/ProductService";
 class ProductController {
 
   async create(request: Request, response: Response){
-    const {id, nameProd, category, value } = request.body;
+    const {id, nameProd, category, quant, value } = request.body;
 
     const productService = new ProductService();
 
     try{
-      const productX = await productService.create({id, nameProd, category, value });
+      const productX = await productService.create({id, nameProd, category, quant, value });
     
       return response.json(productX);
 
@@ -51,7 +51,7 @@ class ProductController {
 
 
   async update(request:Request, response: Response){
-    const { id, nameProd, category, value } = request.body;
+    const { id, nameProd, category, quant, value } = request.body;
     const productService = new ProductService();
 
     try{
@@ -59,6 +59,7 @@ class ProductController {
         id,
         nameProd,
         category,
+        quant,
         value
       });
 
@@ -76,9 +77,6 @@ class ProductController {
       });
     }
   }
-  
-
-
 }
 
 export { ProductController  };
