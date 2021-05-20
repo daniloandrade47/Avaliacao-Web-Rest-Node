@@ -6,7 +6,7 @@ class OrderController {
   
   async create(request:Request, response:Response){
 
-    const { id, idClient, products, quant } = request.body;
+    const { id, idClient, products } = request.body;
     const orderService = new OrderService();
 
 
@@ -15,8 +15,7 @@ class OrderController {
       const orderX = await orderService.create({
         id,
         idClient,
-        products,
-        quant
+        products
       });
 
       if (orderX) {

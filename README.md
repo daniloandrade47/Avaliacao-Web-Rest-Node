@@ -250,4 +250,28 @@ routes.post("/produtos", productController.create);
 - Adicionei nos arquivos, fora da pasta projeto, os produtos cadastrados para testar a aplicação. O nome do arquivo é **products_query_results-2021-04-28_92934**. Para usar, retire o **Id**, bem como o **updated_at **e o **created_at**
 
 
+### Rotas:
+#
+#### Entity Client:
 
+- Cadastro de clientes: *routes.post("/clientes", clientController.create);*
+- Busca clientes cadastrados: *routes.get("/clientes", clientController.findAll);*
+- Busca clientes por ID: *routes.get("/clientes/id/:id", clientController.findByID);*
+- Busca clientes por email: *routes.get("/clientes/email/:email", clientController.findByEmail);*
+- Atualiza cadastro de clientes: *routes.put("/clientes", clientController.update);*
+
+
+#### Entity Product
+- Cadastro de produtos: *routes.post("/produtos", productController.create);*
+- Busca dos produtos cadastrados: *routes.get("/produtos", productController.findAll);*
+- Busca de produtos por ID: *routes.get("/produtos/id/:id", productController.findByID);*
+- Atualiza cadastro de produtos: *routes.put("/produtos", productController.update);*
+
+
+#### Entity Order
+- Cadastro de pedidos: *routes.post("/pedidos", orderController.create);*
+- Busca de pedidos cadastrados: *routes.get("/pedidos", orderController.findAll);*
+- Busca de pedidos por ID: *routes.get("/pedidos/produtos/:idOrder", orderProductController.findOrderProduct);*
+
+
+Muito Obrigado! **_/\_**

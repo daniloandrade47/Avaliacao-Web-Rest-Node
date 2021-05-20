@@ -13,7 +13,6 @@ class IOrderCreate{
   id: string;
   idClient: string;
   products: Array<Product>;
-  quant: number;
 }
 
 
@@ -33,7 +32,7 @@ class OrderService {
 
 
 
-  async create({ id, idClient, products, quant}: IOrderCreate){
+  async create({ id, idClient, products}: IOrderCreate){
 
     const orderAlreadyExists = await this.orderRepository.findOne({
       id
@@ -83,15 +82,18 @@ class OrderService {
 
       productCatalog = productsCatalog[index];
 
+      
       if (!productCatalog) {
-        throw new Error("Product" + product.id + "not already exist in catalog!");
+        throw new Error("Product " + product.id + " not already exist in catalog!");
       }
+      
 
       if (productCatalog.quant <product.quant) {
         throw new Error("Product " + product.id
           + " without quantity available! ("
           + productCatalog.quant + ")");
       }
+      
 
       productCatalog.quant = productCatalog.quant - product.quant;
       productUpdate.push(productCatalog);
