@@ -1,5 +1,6 @@
 import { Column, CreateDateColumn, Entity, JoinColumn, ManyToOne, PrimaryColumn, UpdateDateColumn } from "typeorm";
 import { Client } from "./Client";
+import { v4 as uuid } from "uuid"
 
 @Entity("pedidos")
 class Order {
@@ -25,6 +26,13 @@ class Order {
 
   @UpdateDateColumn()
   created_at: Date;
+
+  constructor() {
+    if(!this.id){
+      this.id = uuid();
+    }
+  }
+  
 }
 
 export { Order }

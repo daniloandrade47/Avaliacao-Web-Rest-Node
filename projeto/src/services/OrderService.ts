@@ -10,7 +10,6 @@ import { ProductRepository } from "../repositories/ProductRepository";
 
 
 class IOrderCreate{
-  id: string;
   idClient: string;
   products: Array<Product>;
 }
@@ -31,16 +30,7 @@ class OrderService {
   }
 
 
-
-  async create({ id, idClient, products}: IOrderCreate){
-
-    const orderAlreadyExists = await this.orderRepository.findOne({
-      id
-  });
-
-    if (orderAlreadyExists) {
-      throw new Error("Order " + id + " already registered!");
-    }
+  async create({ idClient, products}: IOrderCreate){    
 
     const clientExists = await this.clientRepository.createQueryBuilder()
       .where("id = :idClient", {
@@ -51,6 +41,7 @@ class OrderService {
       if (!clientExists) {
         throw new Error("Client " + idClient + " already registered!");
       }
+      
   
       if (!products) {
         throw new Error("Product uninformed!");
@@ -63,8 +54,9 @@ class OrderService {
       });
       
       
-
     const productsCatalog = await this.productRepository.find();
+
+   
 
     let index = -1;
     let valueOrder: number = 0.00;
@@ -74,18 +66,18 @@ class OrderService {
     let orderProductSave = new Array<OrderProduct>();
 
 
-    products.map((product: Product) => {
+    products.map((product: Product) => {   
 
       let orderProduct = new OrderProduct();
 
-      index = productsCatalog.map((e) => { return e.id}).indexOf(product.id);
+      index = productsCatalog.map((e) => { return e.id; }).indexOf(product.id);
 
       productCatalog = productsCatalog[index];
 
-      
       if (!productCatalog) {
         throw new Error("Product " + product.id + " not already exist in catalog!");
       }
+    
       
 
       if (productCatalog.quant <product.quant) {
@@ -98,8 +90,10 @@ class OrderService {
       productCatalog.quant = productCatalog.quant - product.quant;
       productUpdate.push(productCatalog);
 
-      orderProduct.id = String(String(id) + String(product.id));
-      orderProduct.idOrder = String(id);
+      console.log(productUpdate);
+
+      //orderProduct.id = String(String(id) + String(product.id));
+      //orderProduct.idOrder = String(id);
       orderProduct.idProduct = product.id;
       orderProduct.quant = product.quant;
       orderProduct.value = productCatalog.value;
@@ -112,14 +106,19 @@ class OrderService {
     });
 
 
-    const order = this.orderRepository.create({
-      id,
+    const order = this.orderRepository.create({          
       idClient,
       numOrder,
       valueOrder
     });
 
+    console.log(order);
+
+
+
     await this.orderRepository.save(order);
+
+  
 
     productUpdate.map(async (product: Product) => {
       await this.productRepository.save(order);

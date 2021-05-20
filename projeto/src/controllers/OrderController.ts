@@ -6,14 +6,11 @@ class OrderController {
   
   async create(request:Request, response:Response){
 
-    const { id, idClient, products } = request.body;
+    const { idClient, products } = request.body;
     const orderService = new OrderService();
 
-
     try{
-
       const orderX = await orderService.create({
-        id,
         idClient,
         products
       });
